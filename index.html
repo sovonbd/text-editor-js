@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <section class="bg-gray-300 w-2/3 mx-auto my-10">
+      <h1 class="text-center text-black font-semibold text-3xl py-4">Text Editor</h1>
+      <div class="p-1">
+        <div class="flex justify-between mx-3">
+          <div class="">
+            <button id="bold" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Bold</button>
+            <button id="italic" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Italic</button>
+            <button id="underline" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Underline</button>
+          </div>
+          <div class="">
+            <button id="left" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Left</button>
+            <button id="center" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Center</button>
+            <button id="right" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Right</button>
+            <button id="justify" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Justify</button>
+          </div>
+          <div class="">
+            <button id="font-size" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Font-Size</button>
+            <button id="upper" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Upper</button>
+            <button id="lower" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Lower</button>
+            <button id="color" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Color</button>
+          </div>
+        </div>
+
+        <div class="text-center m-3">
+          <textarea name="" id="textarea" cols="30" rows="20" class="w-[100%]"></textarea>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
