@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text Editor</title>
+    <script src="https://kit.fontawesome.com/a4d710dd45.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -11,27 +12,35 @@
       <h1 class="text-center text-black font-semibold text-3xl py-4">Text Editor</h1>
       <div class="p-1">
         <div class="flex justify-between mx-3">
-          <div class="">
+          <div>
             <button id="bold" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Bold</button>
             <button id="italic" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Italic</button>
             <button id="underline" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Underline</button>
           </div>
-          <div class="">
+          <div>
             <button id="left" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Left</button>
             <button id="center" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Center</button>
             <button id="right" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Right</button>
             <button id="justify" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Justify</button>
           </div>
-          <div class="">
-            <button id="font-size" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Font-Size</button>
+          <div class="flex flex-row items-center gap-1">
+            <select name="" id="font-size" class="border-2 text-xs border-slate-600 bg-transparent text-black rounded-lg px-1 py-1">
+              <option value="4">4px</option>
+              <option value="8">8px</option>
+              <option value="12">12px</option>
+              <option value="16">16px</option>
+              <option value="20">20px</option>
+              <option value="24">24px</option>
+              <option value="28">28px</option>
+              <option value="32">32px</option>
+            </select>
             <button id="upper" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Upper</button>
             <button id="lower" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Lower</button>
-            <button id="color" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Color</button>
+            <input type="color" id="color" class="border-2 border-slate-600 rounded-lg" />
           </div>
         </div>
-
         <div class="text-center m-3">
-          <textarea name="" id="textarea" cols="30" rows="20" class="w-[100%]"></textarea>
+          <textarea name="" id="textarea" cols="30" rows="10" class="w-[100%] h-72 p-1"></textarea>
         </div>
       </div>
     </section>
