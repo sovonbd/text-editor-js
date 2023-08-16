@@ -13,18 +13,18 @@
       <div class="p-1">
         <div class="flex justify-between mx-3">
           <div>
-            <button id="bold" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Bold</button>
-            <button id="italic" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Italic</button>
-            <button id="underline" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Underline</button>
+            <button id="bold" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-bold"></i></button>
+            <button id="italic" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-italic"></i></button>
+            <button id="underline" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-underline"></i></button>
           </div>
           <div>
-            <button id="left" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Left</button>
-            <button id="center" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Center</button>
-            <button id="right" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Right</button>
-            <button id="justify" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Justify</button>
+            <button id="left" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-align-left"></i></button>
+            <button id="center" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-align-center"></i></button>
+            <button id="right" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-align-right"></i></button>
+            <button id="justify" class="text-xs text-black rounded-lg px-2 py-1 hover:text-white hover:bg-slate-600"><i class="fa-solid fa-align-justify"></i></button>
           </div>
           <div class="flex flex-row items-center gap-1">
-            <select name="" id="font-size" class="border-2 text-xs border-slate-600 bg-transparent text-black rounded-lg px-1 py-1">
+            <select name="" id="font-size" class="border-2 text-xs border-slate-600 bg-transparent text-black rounded-lg px-0 py-1">
               <option value="4">4px</option>
               <option value="8">8px</option>
               <option value="12">12px</option>
@@ -34,11 +34,18 @@
               <option value="28">28px</option>
               <option value="32">32px</option>
             </select>
-            <button id="upper" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Upper</button>
-            <button id="lower" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Lower</button>
+            <select name="" id="case" class="border-2 text-xs border-slate-600 text-black rounded-lg px-2 py-1 bg-transparent">
+              <option value="">Change Case</option>
+              <option value="uppercase">Uppercase</option>
+              <option value="lowercase">Lowercase</option>
+            </select>
+            <!-- <button id="upper" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Upper</button>
+            <button id="lower" class="border-2 text-xs border-slate-600 text-black rounded-lg px-4 py-1 hover:text-white hover:bg-slate-600">Lower</button> -->
             <input type="color" id="color" class="border-2 border-slate-600 rounded-lg" />
           </div>
         </div>
+        <hr class="h-[2px] m-3 bg-gray-200 border-0 dark:bg-gray-700" />
+
         <div class="text-center m-3">
           <textarea name="" id="textarea" cols="30" rows="10" class="w-[100%] h-72 p-1"></textarea>
         </div>
